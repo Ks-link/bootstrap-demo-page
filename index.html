@@ -1,138 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="styles/normalize-fwd-kaleb.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
-  </head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles/styles.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="styles/normalize-fwd-kaleb.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
-  <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-xl bg-warning navbar-light">
-        <div class="container">
-          <a href="#" class="navbar-brand">Bootstrap</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-item nav-link" href="#">Home</a>
-              <a class="nav-item nav-link" href="#">Code Demo</a>
-            </div>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-xl bg-warning navbar-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Code Demo</a>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
+  <main>
 
-        <div class="container">
+    <!-- These are site wrappers -->
+    <div class="container mt-5 pt-4">
+      <div class="row">
 
-            <div class="row">
+        <!-- This is the sidebar section -->
+        <section class="col-3 p-3">
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark">What is Bootstrap?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark">What Does it Do?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark">Why Use Bootstrap?</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark">Why Use Bootstrap?</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark">Pros and Cons</a>
+            </li>
+          </ul>
+        </section>
 
-                <section class="col-3 sticky-left">
-                    <ul>
-                        <li>
-                            <p>What is Bootstrap?</p>
-                        </li>
-                        <li>
-                            <p>What Does it Do?</p>
-                        </li>
-                        <li></li>
-                    </ul>
-                </section>
+        <!-- This is the main site content -->
+        <section class="col-8">
 
-                <section class="col">
+          <h1>Welcome to Bootstrap!</h1>
 
-                    <h1>Welcome to Bootstrap!</h1>
+          <h2>What is Bootstrap?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda excepturi iusto delectus
+            recusandae ex eaque necessitatibus earum sapiente alias reprehenderit, nulla corporis facilis!
+            Dolore.
+          </p>
+          <h2>Pros and Cons of Bootstrap</h2>
+          <h3>Pros</h3>
+          <ul>
+            <li>
+              <b>Fast and Time-Saving:</b>
+              <p>
+                By leveraging the power of Bootstrap, developers can save
+                significant time and effort in front-end development, resulting in
+                faster project delivery and cost savings.
+              </p>
+            </li>
+            <li>
+              <b>Responsive design</b>
+              <p>
+                Bootstrap’s responsive design means that websites built with it
+                will automatically adjust to different screen sizes, making them
+                mobile-friendly and accessible to a wider audience.
+              </p>
+            </li>
+            <li>
+              <b>Consistent design</b>
+              <p>
+                Bootstrap’s pre-designed components and templates help ensure a
+                consistent design across your website, saving you time and effort.
+              </p>
+            </li>
+            <li>
+              <b>Wide range of components</b>
+              <p>
+                Bootstrap comes with a wide range of pre-designed components,
+                including forms, buttons, navigation menus, and more. This makes
+                it easy to add functionality to your website without having to
+                build everything from scratch.
+              </p>
+            </li>
+            <li>
+              <b>Large community</b>
+              <p>
+                With a large community of developers using and contributing to
+                Bootstrap, you’ll find plenty of resources, tutorials, and support
+                available online.
+              </p>
+            </li>
+            <li>
+              <b>Cross-Browser Compatibility</b>
+              <p>
+                The front-end framework for web development supports cross-browser
+                compatibility; the site renders on various browsers, such as
+                Chrome, Firefox, Edge, Safari, etc., without losing its form.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-                    <h2>What is Bootstrap?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda excepturi iusto delectus
-                        recusandae ex eaque necessitatibus earum sapiente alias reprehenderit, nulla corporis facilis!
-                        Dolore.
-                    </p>
-                  <h2>Pros and Cons of Bootstrap</h2>
-                  <h3>Pros</h3>
-                  <ul>
-                    <li>
-                      <b>Fast and Time-Saving:</b>
-                      <p>
-                        By leveraging the power of Bootstrap, developers can save
-                        significant time and effort in front-end development, resulting in
-                        faster project delivery and cost savings.
-                      </p>
-                    </li>
-                    <li>
-                      <b>Responsive design</b>
-                      <p>
-                        Bootstrap’s responsive design means that websites built with it
-                        will automatically adjust to different screen sizes, making them
-                        mobile-friendly and accessible to a wider audience.
-                      </p>
-                    </li>
-                    <li>
-                      <b>Consistent design</b>
-                      <p>
-                        Bootstrap’s pre-designed components and templates help ensure a
-                        consistent design across your website, saving you time and effort.
-                      </p>
-                    </li>
-                    <li>
-                      <b>Wide range of components</b>
-                      <p>
-                        Bootstrap comes with a wide range of pre-designed components,
-                        including forms, buttons, navigation menus, and more. This makes
-                        it easy to add functionality to your website without having to
-                        build everything from scratch.
-                      </p>
-                    </li>
-                    <li>
-                      <b>Large community</b>
-                      <p>
-                        With a large community of developers using and contributing to
-                        Bootstrap, you’ll find plenty of resources, tutorials, and support
-                        available online.
-                      </p>
-                    </li>
-                    <li>
-                      <b>Cross-Browser Compatibility</b>
-                      <p>
-                        The front-end framework for web development supports cross-browser
-                        compatibility; the site renders on various browsers, such as
-                        Chrome, Firefox, Edge, Safari, etc., without losing its form.
-                      </p>
-                    </li>
-                  </ul>
-                </section>
-            </div>
-        </div>
-      
 
-    </main>
+  </main>
 
-    <footer></footer>
+  <footer></footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
