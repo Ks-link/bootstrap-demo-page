@@ -184,62 +184,65 @@
 
               <li>
                 <b>Customizable</b>
-                <p>Users can always modify the CSS file if they are not satisfied with Bootstrap’s design template. Also, it can be combined with existing designs, and thus, they can complement each other’s functions.
+                <p>Users can always modify the CSS file if they are not satisfied with Bootstrap’s design template.
+                  Also, it can be combined with existing designs, and thus, they can complement each other’s functions.
                 </p>
               </li>
 
               <li>
                 <b>Community supports</b>
-                <p>Bootstrap provides a lot of resources and materials on its official website and some other websites also offer certain resources.
+                <p>Bootstrap provides a lot of resources and materials on its official website and some other websites
+                  also offer certain resources.
                 </p>
               </li>
             </ul>
 
           </article>
 
-          
-        <article id="where">
 
-          <h2 class="py-4">Where would you use Bootstrap?</h2>
+          <article id="where">
 
-          <ul>
-            <li>
-              <b>Bootstrap Components</b>
-              <p>Navbar, Button, Button group, List group, Cards, Collapse, Dropdowns
-              </p>
-            </li>
+            <h2 class="py-4">Where would you use Bootstrap?</h2>
 
-            <li>
-              <b>Bootstrap Grid System</b>
-              <p>Bootstrap's grid system allows up to 12 columns across the page.
-                Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size
-                
-              </p>
-            </li>
+            <ul>
+              <li>
+                <b>Bootstrap Components</b>
+                <p>Navbar, Button, Button group, List group, Cards, Collapse, Dropdowns
+                </p>
+              </li>
 
-            <li>
-              <b>Bootstrap Navbar Class</b>
-              <p>With Bootstrap, a navigation bar can extend or collapse, depending on the screen size..
+              <li>
+                <b>Bootstrap Grid System</b>
+                <p>Bootstrap's grid system allows up to 12 columns across the page.
+                  Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size
 
-              </p>
-            </li>
-            <li>
-              <b>Bootstrap Button Component</b>
-              <p>Bootstrap provides different styles of buttons.
-              </p>
-            </li>
-            <li>
-              <b>Bootstrap Cards Component</b>
-              <p>A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.
-              </p>
-            </li>
-            <li>
-              <b>Bootstrap Dropdowns Component</b>
-              <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list:
-              </p>
-            </li>
-          </ul>
-      </article>
+                </p>
+              </li>
+
+              <li>
+                <b>Bootstrap Navbar Class</b>
+                <p>With Bootstrap, a navigation bar can extend or collapse, depending on the screen size..
+
+                </p>
+              </li>
+              <li>
+                <b>Bootstrap Button Component</b>
+                <p>Bootstrap provides different styles of buttons.
+                </p>
+              </li>
+              <li>
+                <b>Bootstrap Cards Component</b>
+                <p>A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for
+                  headers, footers, content, colors, etc.
+                </p>
+              </li>
+              <li>
+                <b>Bootstrap Dropdowns Component</b>
+                <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list:
+                </p>
+              </li>
+            </ul>
+          </article>
 
           <hr>
           <article id="pros-and-cons">
@@ -329,45 +332,179 @@
 
           <article id="code-demo">
             <h2 class="py-4">Code Demo</h2>
-            <div class="border">
-              <div class="p-3">
-                <p>Let's style this list!</p>
-                <h3>Fruits</h3>
-                <ul>
-                  <li>Apple</li>
-                  <li>Orange</li>
-                  <li>Banana</li>
-                  <li>Strawberry</li>
-                </ul>
-              </div>
+
+            <!-- begin lists code along -->
+            <div class="border p-3">
+              <h3 class="border-bottom">Lists</h3>
+              <p>Let's style this list!</p>
+              <h3>Fruits</h3>
+              <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Strawberry</li>
+              </ul>
             </div>
-            <div class="border">
-              <div class="p-3">
-                <p>Now let's make this into a card using bootstrap.</p>
-                <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
-                <h3>Nike Air Force 1</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More info</a>
-                <p>Now on sale!</p>
-              </div>
+
+            <!-- Begin cards code along -->
+            <div class="border p-3">
+              <h3 class="border-bottom">Cards</h3>
+              <p>Now let's make this into a card using bootstrap.</p>
+              <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
+              <h3>Nike Air Force 1</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="#">More info</a>
+              <p>Now on sale!</p>
             </div>
-            <hr>
+
+            <!-- begin forms code along -->
+            <div class="border p-3">
+              <h3 class="border-bottom">Forms</h3>
+              <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
+                  href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
+                  documentation</a></p>
+
+              <!-- Ugly Form -->
+              <p class="mt-4">Here's the default form 🐛</p>
+              <form class="my-3">
+                <!-- Email Field -->
+                <div>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp">We'll never share your email with anyone else.</div>
+                </div>
+                <!-- Password field -->
+                <div>
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" id="exampleInputPassword1">
+                </div>
+                <!-- Checkbox -->
+                <div>
+                  <input type="checkbox" id="exampleCheck1">
+                  <label for="exampleCheck1">Check me out</label>
+                </div>
+                <!-- Button -->
+                <button type="submit">Submit</button>
+              </form>
+
+              <!-- Beautiful Form -->
+              <p class="mt-4">Here's the form after some bootstrap 🦋</p>
+              <form class="my-3">
+                <!-- Email Field -->
+                <div class="">
+                  <label class="" for="exampleInputEmail2">Email address</label>
+                  <input class="" type="email" id="exampleInputEmail2" aria-describedby="emailHelp">
+                  <div class="" id="emailHelp">We'll never share your email with anyone else.</div>
+                </div>
+                <!-- Password field -->
+                <div class="">
+                  <label class="" for="exampleInputPassword2">Password</label>
+                  <input class="" type="password" id="exampleInputPassword2" disabled>
+                </div>
+                <!-- Checkbox -->
+                <div class="">
+                  <input class="" type="checkbox" id="exampleCheck2">
+                  <label class="" for="exampleCheck2">Check me out</label>
+                </div>
+                <!-- Button -->
+                <button class="" type="submit">Submit</button>
+              </form>
+            </div>
+
+            <!-- Begin flexbox code along -->
+            <div class="border p-3">
+              <h3 class="border-bottom">Flexboxes</h3>
+              <p>Bootstrap even has default styles for everyone's favourite: flexboxes! <br>For more information on
+                flexboxes in bootstrap see <a href="https://getbootstrap.com/docs/5.3/forms/overview/"
+                  target="_blank">bootstrap
+                  documentation</a></p>
+
+              <!-- Justify Content demo -->
+              <div class="bg-dark-subtle d-flex mb-3 ">
+                <div class="p-2 bg-warning-subtle border">Justify</div>
+                <div class="p-2 bg-warning-subtle border">Content</div>
+                <div class="p-2 bg-warning-subtle border">Center</div>
+              </div>
+
+              <!-- Flex Grow demo -->
+              <div class="bg-dark-subtle mb-3 d-flex ">
+                <div class="bg-warning-subtle border p-2 ">Let me grow!</div>
+                <div class="bg-warning-subtle border p-2">Flex item</div>
+                <div class="bg-warning-subtle border p-2">Flex item but longer</div>
+              </div>
+
+              <!-- Wrap demo -->
+              <div class="bg-dark-subtle mb-3 d-flex ">
+                <div class="p-2 bg-warning-subtle border">Wrap me 1</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 2</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 3</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 4</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 5</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 6</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 7</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 8</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 9</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 10</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 11</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 12</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 13</div>
+                <div class="p-2 bg-warning-subtle border">Wrap me 14</div>
+              </div>
+
+            </div>
+
+            <!-- Begin buttons code along -->
+            <div class="border p-3">
+              <h3 class="border-bottom">Button</h3>
+                <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
+                    href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
+                    documentation</a></p>
+  
+                <!-- Ugly -->
+                <p class="mt-4">Here's the default buttons 🐛</p>
+              <div class="container mt-3">
+                <button type="button" class=>Basic</button>
+                <button type="button" class=>Primary</button>
+                <button type="button" class=>secondary</button>
+            </div>
             <div class="container mt-3" >
-              <button type="button" class=>Basic</button>
-              <button type="button" class=>Primary</button>
-              <button type="button" class=>secondary</button>
+              <button type="button" class="btn">Basic</button>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-outline-secondary">secondary</button>
           </div>
-          <div class="container mt-3" >
-            <button type="button" class="btn">Basic</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-outline-secondary">secondary</button>
-        </div>
-            <!-- <div class="container mt-3" >
-                <button type="button" class="btn">Basic</button>
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-outline-secondary">secondary</button>
-            </div> -->
-            <hr>
+              <!-- <div class="container mt-3" >
+                  <button type="button" class="btn">Basic</button>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary">secondary</button>
+              </div> -->
+
+            <!-- Begin dropdowns code along -->
+
+              <hr>
+              <h3 class="border-bottom">Dropdowns</h3>
+                <p>Let's make this form less ugly! <br>For more information on dropdowns in bootstrap see <a
+                    href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">bootstrap
+                    documentation</a></p>
+  
+                <!-- Ugly -->
+                <p class="mt-4">Here's the default dropdown</p>
+              <div class=>
+                <button type="button" class=>Action</button>
+                <a class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                  type="button"
+                  id="dropdownMicroProcessor"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="">Button Group</span>
+                </a>
+              <ul class="" aria-labelledby="dropdownMicroProcecsor">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+              </ul>
+            </div>
+
             <div class="btn-group">
               <button type="button" class="btn btn-success">Action</button>
               <a class="btn btn-success dropdown-toggle dropdown-toggle-split"
@@ -377,29 +514,14 @@
                 aria-expanded="false">
                 <span class="visually-hidden">Button Group</span>
               </a>
-            <ul class aria-labelledby="dropdownMicroProcecsor">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
               <li><a class="dropdown-item" href="#">Microcontroller</a></li>
               <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
               <li><a class="dropdown-item" href="#">DSP</a></li>
               <li><a class="dropdown-item" href="#">Media Processor</a></li>
             </ul>
           </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-success">Action</button>
-            <a class="btn btn-success dropdown-toggle dropdown-toggle-split"
-              type="button"
-              id="dropdownMicroProcessor"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span class="visually-hidden">Button Group</span>
-            </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
-            <li><a class="dropdown-item" href="#">Microcontroller</a></li>
-            <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
-            <li><a class="dropdown-item" href="#">DSP</a></li>
-            <li><a class="dropdown-item" href="#">Media Processor</a></li>
-          </ul>
-        </div>
+            </div>
           </article>
 
         </section>
