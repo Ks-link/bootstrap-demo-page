@@ -73,7 +73,7 @@
 
           <h1>Welcome to Bootstrap!</h1>
 
-          <article id="what-is-bootstrap">
+          <article id="what-is-bootstrap" class="mb-5">
 
             <h2 class="py-4">What is Bootstrap?</h2>
 
@@ -121,8 +121,9 @@
 
           </article>
 
-          <article id="what-does-it-do">
+          <article id="what-does-it-do" class="mb-5">
 
+            <hr>
             <h2 class="py-4">What Does it Do?</h2>
 
             <ul>
@@ -173,8 +174,9 @@
 
           </article>
 
-          <article id="why">
+          <article id="why" class="mb-5">
 
+            <hr>
             <h2 class="py-4">Why would you use Bootstrap?</h2>
 
             <ul>
@@ -204,8 +206,9 @@
           </article>
 
 
-          <article id="where">
+          <article id="where" class="mb-5">
 
+            <hr>
             <h2 class="py-4">Where would you use Bootstrap?</h2>
 
             <ul>
@@ -249,7 +252,7 @@
           </article>
 
           <hr>
-          <article id="pros-and-cons">
+          <article id="pros-and-cons" class="mb-5">
 
             <h2 class="py-4">Pros and Cons of Bootstrap</h2>
 
@@ -305,7 +308,6 @@
               </li>
             </ul>
 
-            <hr>
             <h3 class="p-2">Cons</h3>
             <ul>
               <li>
@@ -334,7 +336,8 @@
             </ul>
           </article>
 
-          <article id="code-demo">
+          <hr>
+          <article id="code-demo" class="mb-5">
             <h2 class="py-4">Code Demo</h2>
 
             <!-- begin lists code along -->
@@ -460,71 +463,65 @@
             <!-- Begin buttons code along -->
             <div class="border p-3">
               <h3 class="border-bottom">Button</h3>
-                <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
-                    href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
-                    documentation</a></p>
-  
-                <!-- Ugly -->
-                <p class="mt-4">Here's the default buttons 🐛</p>
+              <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
+                  href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
+                  documentation</a></p>
+
+              <!-- Ugly -->
+              <p class="mt-4">Here's the default buttons 🐛</p>
               <div class="container mt-3">
                 <button type="button" class=>Basic</button>
                 <button type="button" class=>Primary</button>
                 <button type="button" class=>secondary</button>
-            </div>
-            <div class="container mt-3" >
-              <button type="button" class="btn">Basic</button>
-              <button type="button" class="btn btn-primary">Primary</button>
-              <button type="button" class="btn btn-outline-secondary">secondary</button>
-          </div>
+              </div>
+              <div class="container mt-3">
+                <button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">secondary</button>
+              </div>
               <!-- <div class="container mt-3" >
                   <button type="button" class="btn">Basic</button>
                   <button type="button" class="btn btn-primary">Primary</button>
                   <button type="button" class="btn btn-outline-secondary">secondary</button>
               </div> -->
 
-            <!-- Begin dropdowns code along -->
+              <!-- Begin dropdowns code along -->
 
               <hr>
               <h3 class="border-bottom">Dropdowns</h3>
-                <p>Let's make this form less ugly! <br>For more information on dropdowns in bootstrap see <a
-                    href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">bootstrap
-                    documentation</a></p>
-  
-                <!-- Ugly -->
-                <p class="mt-4">Here's the default dropdown</p>
+              <p>Let's make this form less ugly! <br>For more information on dropdowns in bootstrap see <a
+                  href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">bootstrap
+                  documentation</a></p>
+
+              <!-- Ugly -->
+              <p class="mt-4">Here's the default dropdown</p>
               <div class=>
                 <button type="button" class=>Action</button>
-                <a class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                  type="button"
-                  id="dropdownMicroProcessor"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button"
+                  id="dropdownMicroProcessor" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="">Button Group</span>
                 </a>
-              <ul class="" aria-labelledby="dropdownMicroProcecsor">
-                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
-                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
-                <li><a class="dropdown-item" href="#">DSP</a></li>
-                <li><a class="dropdown-item" href="#">Media Processor</a></li>
-              </ul>
-            </div>
+                <ul class="" aria-labelledby="dropdownMicroProcecsor">
+                  <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                  <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                  <li><a class="dropdown-item" href="#">DSP</a></li>
+                  <li><a class="dropdown-item" href="#">Media Processor</a></li>
+                </ul>
+              </div>
 
-            <div class="btn-group">
-              <button type="button" class="btn btn-success">Action</button>
-              <a class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                type="button"
-                id="dropdownMicroProcessor"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="visually-hidden">Button Group</span>
-              </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
-              <li><a class="dropdown-item" href="#">Microcontroller</a></li>
-              <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
-              <li><a class="dropdown-item" href="#">DSP</a></li>
-              <li><a class="dropdown-item" href="#">Media Processor</a></li>
-            </ul>
-          </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-success">Action</button>
+                <a class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button"
+                  id="dropdownMicroProcessor" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Button Group</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
+                  <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                  <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                  <li><a class="dropdown-item" href="#">DSP</a></li>
+                  <li><a class="dropdown-item" href="#">Media Processor</a></li>
+                </ul>
+              </div>
             </div>
           </article>
 
