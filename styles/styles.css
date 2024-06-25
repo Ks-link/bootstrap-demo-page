@@ -3,6 +3,10 @@ html {
 }
 
 .sidebar {
-	position: sticky;
-	top: 4.5rem;
+	position: sticky !important;
+	top: 4.5rem !important;
+}
+
+.active {
+	background-color: #fff3cd !important;
 }

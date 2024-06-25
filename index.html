@@ -39,45 +39,49 @@
       <div class="row">
 
         <!-- This is the sidebar section -->
-        <section class="col-3 p-2 h-25 sidebar">
+        <nav id="sidebar" class="col-3 p-2 h-25 navbar sidebar">
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-              <a href="#what-is-bootstrap" class="nav-link link-dark">What is Bootstrap?</a>
+              <a href="#what-is-bootstrap" class="nav-link link-dark">What is
+                Bootstrap?</a>
             </li>
             <li class="nav-item">
-              <a href="#what-does-it-do" class="nav-link link-dark">What Does it Do?</a>
+              <a href="#what-does-it-do" class="nav-link link-dark">What Does it
+                Do?</a>
             </li>
             <li class="nav-item">
               <a href="#why" class="nav-link link-dark">Why Use Bootstrap?</a>
             </li>
             </li>
             <li class="nav-item">
-              <a href="#where" class="nav-link link-dark">Where to Use Bootstrap</a>
+              <a href="#where" class="nav-link link-dark">Where to Use
+                Bootstrap</a>
             </li>
             </li>
             <li class="nav-item">
-              <a href="#pros-and-cons" class="nav-link link-dark">Pros and Cons</a>
+              <a href="#pros-and-cons" class="nav-link link-dark">Pros and
+                Cons</a>
             </li>
             <li class="nav-item">
               <a href="#code-demo" class="nav-link link-dark">Code Demo</a>
             </li>
           </ul>
-        </section>
+        </nav>
 
         <!-- This is the main site content -->
-        <section class="col-8">
+        <section class="col-8" data-bs-spy="scroll" data-bs-target="#sidebar" data-offset="0">
 
           <h1>Welcome to Bootstrap!</h1>
 
-          <article id="what-is-bootstrap">
+          <article id="what-is-bootstrap" class="mb-5">
 
             <h2 class="py-4">What is Bootstrap?</h2>
 
             <ul>
               <li>
                 <b>One of the most popular front-end frameworks in the world!</b>
-                <p>Bootstrap is utilized by roughly 3.2 million domains, which is even more than jQuery which has
-                  roughly 2.7 million domains! <i>Info pulled from the 6sense bootstrap analysis at</i>
+                <p>Bootstrap is utilized by roughly 3.2 million domains, even more than jQuery which has
+                  around 2.7 million domains! <i>Info pulled from the 6sense bootstrap analysis at</i>
                   <a
                     href="https://6sense.com/tech/programming-framework/bootstrap-market-share">https://6sense.com/tech/programming-framework/bootstrap-market-share</a>
                 </p>
@@ -91,7 +95,7 @@
 
               <li>
                 <b>Created by Twitter developers in mid-2010</b>
-                <p>Made by Mark Otto <a target="_blank" href="https://x.com/mdo">@mdo</a> and Jacob Thornton<a
+                <p>Made by Mark Otto <a target="_blank" href="https://x.com/mdo">@mdo</a> and Jacob Thornton <a
                     target="_blank" href="https://x.com/fat">@fat</a>
                 </p>
               </li>
@@ -117,8 +121,9 @@
 
           </article>
 
-          <article id="what-does-it-do">
+          <article id="what-does-it-do" class="mb-5">
 
+            <hr>
             <h2 class="py-4">What Does it Do?</h2>
 
             <ul>
@@ -131,17 +136,10 @@
               </li>
 
               <li>
-                <b>Quickly add reponsive design to your website or specific elements</b>
+                <b>Quickly add responsive design to your website or specific elements</b>
                 <p>Bootstrap provides a responsive grid system that allows web pages to automatically adjust their
                   layout based on the screen size and resolution of the device.
                   This ensures a consistent user experience across desktops, tablets, and mobile devices.</p>
-              </li>
-
-              <li>
-                <b>Guarantee cross-browser compatibility</b>
-                <p>Bootstrap ensures that web applications work consistently across different browsers, reducing the
-                  need for browser-specific hacks and adjustments.
-                  It handles many cross-browser issues out of the box, making development more efficient.</p>
               </li>
 
               <li>
@@ -153,7 +151,7 @@
 
               <li>
                 <b>Offers various utility classes</b>
-                <p>Alsp provides a range of classes that simplify the application of common styles and functionalities.
+                <p>Also provides a range of classes that simplify the application of common styles and functionalities.
                   These classes cover tasks like spacing, text alignment, visibility, and more, allowing for quick and
                   flexible styling adjustments.</p>
               </li>
@@ -169,8 +167,9 @@
 
           </article>
 
-          <article id="why">
+          <article id="why" class="mb-5">
 
+            <hr>
             <h2 class="py-4">Why would you use Bootstrap?</h2>
 
             <ul>
@@ -215,8 +214,9 @@
           </article>
 
 
-          <article id="where">
+          <article id="where" class="mb-5">
 
+            <hr>
             <h2 class="py-4">Where would you use Bootstrap?</h2>
 
             <ul>
@@ -243,7 +243,7 @@
           </article>
 
           <hr>
-          <article id="pros-and-cons">
+          <article id="pros-and-cons" class="mb-5">
 
             <h2 class="py-4">Pros and Cons of Bootstrap</h2>
 
@@ -299,7 +299,6 @@
               </li>
             </ul>
 
-            <hr>
             <h3 class="p-2">Cons</h3>
             <ul>
               <li>
@@ -328,13 +327,15 @@
             </ul>
           </article>
 
-          <article id="code-demo">
+          <hr>
+          <article id="code-demo" class="mb-5">
             <h2 class="py-4">Code Demo</h2>
 
             <!-- begin lists code along -->
             <div class="border p-3">
               <h3 class="border-bottom">Lists</h3>
               <p>Let's style this list!</p>
+
               <h3>Fruits</h3>
               <ul>
                 <li>Apple</li>
@@ -342,17 +343,31 @@
                 <li>Banana</li>
                 <li>Strawberry</li>
               </ul>
+              <!-- LIST UNSTYLED -->
+
+              <!-- LIST INLINE -->
+
+              <!-- LIST GROUP -->
+
+              <!-- LIST GROUP - LINK/BUTTON -->
+
+
             </div>
 
             <!-- Begin cards code along -->
             <div class="border p-3">
               <h3 class="border-bottom">Cards</h3>
               <p>Now let's make this into a card using bootstrap.</p>
+
+              <!-- CARD W/ NO BOOTSTRAP -->
               <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
               <h3>Nike Air Force 1</h3>
               <p>Lorem ipsum dolor sit amet.</p>
               <a href="#">More info</a>
               <p>Now on sale!</p>
+
+              <!-- CARD W/ BOOTSTRAP -->
+
             </div>
 
             <!-- begin forms code along -->
@@ -505,7 +520,6 @@
                   <li><a href="#dropdown">JavaScript</a></li>
                 </ul>
               </div>
-                
           </article>
 
         </section>
