@@ -174,24 +174,39 @@
 
             <ul>
               <li>
-                <b>Components and templates</b>
-                <p>To apply bootstrap styles, simply add the associated class to the html element. A wide range of
-                  reusable, pre-styled UI components such as buttons, forms, navigation bars, modals, and
-                  carousels are available.
+                <b>Its Components</b>
+                <p>Bootstrap comes with a whole variety of components you can easily tack onto your web page, including:
+                  Dropdowns, Forms, Navigation Bars, Buttons, Tables, Progress bars, Thumbnails
+                  
                 </p>
               </li>
 
               <li>
-                <b>Customizable</b>
+                <b>Its documentation</b>
+                <p>Bootstrap’s documentation is some of the best we’ve ever seen. Every piece of code is described and explained in explicit detail on their website.Explanations also include code samples for basic implementation, simplifying the process for even the most beginner of beginners.
+              </li>
+              <li>
+                <b>Its Customizablility</b>
                 <p>Users can always modify the CSS file if they are not satisfied with Bootstrap’s design template.
                   Also, it can be combined with existing designs, and thus, they can complement each other’s functions.
                 </p>
               </li>
 
               <li>
-                <b>Community supports</b>
-                <p>Bootstrap provides a lot of resources and materials on its official website and some other websites
-                  also offer certain resources.
+                <b>Its Community</b>
+                <p>Bootstrap provides a lot of resources and materials on its official website and some other websites also offer certain resources.It also makes it easy for people to collaborate, lend their advice, and interact with peers and fellow users.
+                </p>
+              </li>
+
+              <li>
+                <b>Its external templates</b>
+                <p>As its popularity grew, people started creating templates based on Bootstrap in order to accelerate the web development process even further. There are many websites out there dedicated to sharing and buying custom templates based on Bootstrap.
+
+                  <ul>
+                    <li>W3Schools Bootstrap templates</li>
+                    <li>Start Bootstrap templates</li>
+                    <li>Wrap Bootstrap templates</li>
+                  </ul>
                 </p>
               </li>
             </ul>
@@ -206,39 +221,22 @@
 
             <ul>
               <li>
-                <b>Bootstrap Components</b>
-                <p>Navbar, Button, Button group, List group, Cards, Collapse, Dropdowns
+                <b>You want a responsive website</b>
+                <p>Building a responsive site is much easier using Bootstrap than doing so from scratch. Bootstrap comes with responsive styles, like containers and media queries, to ensure your site adjusts to the viewport.
                 </p>
               </li>
 
               <li>
-                <b>Bootstrap Grid System</b>
-                <p>Bootstrap's grid system allows up to 12 columns across the page.
-                  Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size
+                <b>You want to save time</b>
+                <p>You can build your site quickly with Bootstrap. Once you download the framework, you can get started with a basic template and then add the components you need. These components are fundamental HTML elements, like tables, forms, buttons, images, and icons, that are styled with a base class and extended with modifier classes. 
+
 
                 </p>
               </li>
 
               <li>
-                <b>Bootstrap Navbar Class</b>
-                <p>With Bootstrap, a navigation bar can extend or collapse, depending on the screen size..
-
-                </p>
-              </li>
-              <li>
-                <b>Bootstrap Button Component</b>
-                <p>Bootstrap provides different styles of buttons.
-                </p>
-              </li>
-              <li>
-                <b>Bootstrap Cards Component</b>
-                <p>A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for
-                  headers, footers, content, colors, etc.
-                </p>
-              </li>
-              <li>
-                <b>Bootstrap Dropdowns Component</b>
-                <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list:
+                <b>You have multiple people building out your site.</b>
+                <p>If you have multiple collaborators working on a site, then consistency is important. Using Bootstrap and its default settings, utility classes, and component elements can help ensure the front end of your site looks consistent.
                 </p>
               </li>
             </ul>
@@ -469,68 +467,59 @@
             </div>
 
             <!-- Begin buttons code along -->
-            <div class="border p-3">
+
+            <div class="border p-3" id="buttons">
               <h3 class="border-bottom">Button</h3>
-              <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
-                  href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
-                  documentation</a></p>
+              <p class="mt-4">Bootstrap 5 provides different styles of buttons <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">More information
+                  </a></p>
+                  <p>Here is the basic buttons without bootstrap</p>
+                  <!-- Here is default button without bootstrap class -->
+                  <div class="container mt-3" >
+                    <button type="button" class="">Basic</button>
+                    <a href="#buttons" class=" -outline-secondary">Secondary</a>
+                    <input type="submit" class=" btn-primary" value="Submit Button"></input>
+                  </div>
 
-              <!-- Ugly -->
-              <p class="mt-4">Here's the default buttons 🐛</p>
-              <div class="container mt-3">
-                <button type="button" class=>Basic</button>
-                <button type="button" class=>Primary</button>
-                <button type="button" class=>secondary</button>
+              <!-- buttons demo -->
+              <p class="mt-4">Let's style these buttons with bootstrap!</p>
+              <div class="container mt-3" >
+                <button type="button" class="">Basic</button>
+                <a href="#buttons" class=" -outline-secondary">Secondary</a>
+                <input type="submit" class=" btn-primary" value="Submit Button"></input>
               </div>
-              <div class="container mt-3">
-                <button type="button" class="btn">Basic</button>
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-outline-secondary">secondary</button>
-              </div>
-              <!-- <div class="container mt-3" >
-                  <button type="button" class="btn">Basic</button>
-                  <button type="button" class="btn btn-primary">Primary</button>
-                  <button type="button" class="btn btn-outline-secondary">secondary</button>
-              </div> -->
 
-              <!-- Begin dropdowns code along -->
+            <!-- Begin dropdowns code along -->
 
               <hr>
-              <h3 class="border-bottom">Dropdowns</h3>
-              <p>Let's make this form less ugly! <br>For more information on dropdowns in bootstrap see <a
-                  href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">bootstrap
-                  documentation</a></p>
-
-              <!-- Ugly -->
-              <p class="mt-4">Here's the default dropdown</p>
-              <div class=>
-                <button type="button" class=>Action</button>
-                <a class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button"
-                  id="dropdownMicroProcessor" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="">Button Group</span>
-                </a>
-                <ul class="" aria-labelledby="dropdownMicroProcecsor">
-                  <li><a class="dropdown-item" href="#">Microcontroller</a></li>
-                  <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
-                  <li><a class="dropdown-item" href="#">DSP</a></li>
-                  <li><a class="dropdown-item" href="#">Media Processor</a></li>
+              <h3 class="border-bottom" id='dropdown'>Dropdowns</h3>
+              <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list <a
+                  href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">More information
+                </a></p>
+              <p>Here is the basic buttons without bootstrap</p>
+              
+              <!-- Here is default dropdown without bootstrap class -->
+              <div class="">
+                <button class="btn btn-primary " type="button">Dropdown Example
+                </button>
+                <ul class="">
+                  <li><a href="#dropdown">HTML</a></li>
+                  <li><a href="#dropdown">CSS</a></li>
+                  <li><a href="#dropdown">JavaScript</a></li>
                 </ul>
               </div>
+              
+              <p class="mt-4">Let's style these dropdown menu with bootstrap!</p>
 
-              <div class="btn-group">
-                <button type="button" class="btn btn-success">Action</button>
-                <a class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button"
-                  id="dropdownMicroProcessor" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Button Group</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
-                  <li><a class="dropdown-item" href="#">Microcontroller</a></li>
-                  <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
-                  <li><a class="dropdown-item" href="#">DSP</a></li>
-                  <li><a class="dropdown-item" href="#">Media Processor</a></li>
+              <!--  dropdown demo  -->
+              <div class="">
+                <button class="btn btn-primary " type="button">Dropdown Example
+                </button>
+                <ul class="">
+                  <li><a href="#dropdown">HTML</a></li>
+                  <li><a href="#dropdown">CSS</a></li>
+                  <li><a href="#dropdown">JavaScript</a></li>
                 </ul>
               </div>
-            </div>
           </article>
 
         </section>
