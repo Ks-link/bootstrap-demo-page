@@ -3,10 +3,18 @@ html {
 }
 
 .sidebar {
-	position: sticky !important;
-	top: 4.5rem !important;
+	display: none !important;
 }
 
 .active {
 	background-color: #fff3cd !important;
 }
+
+@media (min-width: 48em) {
+	.sidebar {
+		display: block !important;
+		position: sticky !important;
+		top: 4.5rem !important;
+		justify-content: center !important;
+	}
+}	
