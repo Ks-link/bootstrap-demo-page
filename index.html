@@ -39,7 +39,7 @@
       <div class="row">
 
         <!-- This is the sidebar section -->
-        <nav id="sidebar" class="col-3 p-2 h-25 navbar sidebar">
+        <nav id="sidebar" class="col-md-3 p-2 h-25 navbar sidebar">
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
               <a href="#what-is-bootstrap" class="nav-link link-dark">What is
@@ -69,7 +69,7 @@
         </nav>
 
         <!-- This is the main site content -->
-        <section class="col-8" data-bs-spy="scroll" data-bs-target="#sidebar" data-offset="0">
+        <section class="col-md-8" data-bs-spy="scroll" data-bs-target="#sidebar" data-offset="0">
 
           <h1>Welcome to Bootstrap!</h1>
 
@@ -82,8 +82,7 @@
                 <b>One of the most popular front-end frameworks in the world!</b>
                 <p>Bootstrap is utilized by roughly 3.2 million domains, even more than jQuery which has
                   around 2.7 million domains! <i>Info pulled from the 6sense bootstrap analysis at</i>
-                  <a
-                    href="https://6sense.com/tech/programming-framework/bootstrap-market-share">https://6sense.com/tech/programming-framework/bootstrap-market-share</a>
+                  <a href="https://6sense.com/tech/programming-framework/bootstrap-market-share">6sense</a>
                 </p>
               </li>
 
@@ -177,13 +176,15 @@
                 <b>Its Components</b>
                 <p>Bootstrap comes with a whole variety of components you can easily tack onto your web page, including:
                   Dropdowns, Forms, Navigation Bars, Buttons, Tables, Progress bars, Thumbnails
-                  
+
                 </p>
               </li>
 
               <li>
                 <b>Its documentation</b>
-                <p>Bootstrap’s documentation is some of the best we’ve ever seen. Every piece of code is described and explained in explicit detail on their website.Explanations also include code samples for basic implementation, simplifying the process for even the most beginner of beginners.
+                <p>Bootstrap’s documentation is some of the best we’ve ever seen. Every piece of code is described and
+                  explained in explicit detail on their website.Explanations also include code samples for basic
+                  implementation, simplifying the process for even the most beginner of beginners.
               </li>
               <li>
                 <b>Its Customizablility</b>
@@ -194,19 +195,23 @@
 
               <li>
                 <b>Its Community</b>
-                <p>Bootstrap provides a lot of resources and materials on its official website and some other websites also offer certain resources.It also makes it easy for people to collaborate, lend their advice, and interact with peers and fellow users.
+                <p>Bootstrap provides a lot of resources and materials on its official website and some other websites
+                  also offer certain resources.It also makes it easy for people to collaborate, lend their advice, and
+                  interact with peers and fellow users.
                 </p>
               </li>
 
               <li>
                 <b>Its external templates</b>
-                <p>As its popularity grew, people started creating templates based on Bootstrap in order to accelerate the web development process even further. There are many websites out there dedicated to sharing and buying custom templates based on Bootstrap.
+                <p>As its popularity grew, people started creating templates based on Bootstrap in order to accelerate
+                  the web development process even further. There are many websites out there dedicated to sharing and
+                  buying custom templates based on Bootstrap.
 
-                  <ul>
-                    <li>W3Schools Bootstrap templates</li>
-                    <li>Start Bootstrap templates</li>
-                    <li>Wrap Bootstrap templates</li>
-                  </ul>
+                <ul>
+                  <li>W3Schools Bootstrap templates</li>
+                  <li>Start Bootstrap templates</li>
+                  <li>Wrap Bootstrap templates</li>
+                </ul>
                 </p>
               </li>
             </ul>
@@ -222,13 +227,18 @@
             <ul>
               <li>
                 <b>You want a responsive website</b>
-                <p>Building a responsive site is much easier using Bootstrap than doing so from scratch. Bootstrap comes with responsive styles, like containers and media queries, to ensure your site adjusts to the viewport.
+                <p>Building a responsive site is much easier using Bootstrap than doing so from scratch. Bootstrap comes
+                  with responsive styles, like containers and media queries, to ensure your site adjusts to the
+                  viewport.
                 </p>
               </li>
 
               <li>
                 <b>You want to save time</b>
-                <p>You can build your site quickly with Bootstrap. Once you download the framework, you can get started with a basic template and then add the components you need. These components are fundamental HTML elements, like tables, forms, buttons, images, and icons, that are styled with a base class and extended with modifier classes. 
+                <p>You can build your site quickly with Bootstrap. Once you download the framework, you can get started
+                  with a basic template and then add the components you need. These components are fundamental HTML
+                  elements, like tables, forms, buttons, images, and icons, that are styled with a base class and
+                  extended with modifier classes.
 
 
                 </p>
@@ -236,7 +246,9 @@
 
               <li>
                 <b>You have multiple people building out your site.</b>
-                <p>If you have multiple collaborators working on a site, then consistency is important. Using Bootstrap and its default settings, utility classes, and component elements can help ensure the front end of your site looks consistent.
+                <p>If you have multiple collaborators working on a site, then consistency is important. Using Bootstrap
+                  and its default settings, utility classes, and component elements can help ensure the front end of
+                  your site looks consistent.
                 </p>
               </li>
             </ul>
@@ -352,76 +364,76 @@
               <!-- LIST GROUP - LINK/BUTTON -->
 
 
-            </div>
+              <!-- Begin cards code along -->
+              <div class="border p-3">
+                <h3 class="border-bottom">Cards</h3>
+                <p>Now let's make this into a card using bootstrap.</p>
 
-            <!-- Begin cards code along -->
-            <div class="border p-3">
-              <h3 class="border-bottom">Cards</h3>
-              <p>Now let's make this into a card using bootstrap.</p>
+                <!-- CARD W/ NO BOOTSTRAP -->
+                <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
+                <h3>Nike Air Force 1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">More info</a>
+                <p>Now on sale!</p>
 
-              <!-- CARD W/ NO BOOTSTRAP -->
-              <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
-              <h3>Nike Air Force 1</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a href="#">More info</a>
-              <p>Now on sale!</p>
+                <!-- CARD W/ BOOTSTRAP -->
 
-              <!-- CARD W/ BOOTSTRAP -->
+              </div>
 
-            </div>
+              <!-- begin forms code along -->
+              <div class="border p-3">
+                <h3 class="border-bottom">Forms</h3>
+                <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
+                    href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
+                    documentation</a></p>
 
-            <!-- begin forms code along -->
-            <div class="border p-3">
-              <h3 class="border-bottom">Forms</h3>
-              <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
-                  href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
-                  documentation</a></p>
+                <!-- Ugly Form -->
+                <p class="mt-4">Here's the default form 🐛</p>
+                <form class="my-3">
+                  <!-- Email Field -->
+                  <div>
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp">We'll never share your email with anyone else.</div>
+                  </div>
+                  <!-- Password field -->
+                  <div>
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" id="exampleInputPassword1">
+                  </div>
+                  <!-- Checkbox -->
+                  <div>
+                    <input type="checkbox" id="exampleCheck1">
+                    <label for="exampleCheck1">Check me out</label>
+                  </div>
+                  <!-- Button -->
+                  <button type="submit">Submit</button>
+                </form>
 
-              <!-- Ugly Form -->
-              <p class="mt-4">Here's the default form 🐛</p>
-              <form class="my-3">
-                <!-- Email Field -->
-                <div>
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp">We'll never share your email with anyone else.</div>
-                </div>
-                <!-- Password field -->
-                <div>
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" id="exampleInputPassword1">
-                </div>
-                <!-- Checkbox -->
-                <div>
-                  <input type="checkbox" id="exampleCheck1">
-                  <label for="exampleCheck1">Check me out</label>
-                </div>
-                <!-- Button -->
-                <button type="submit">Submit</button>
-              </form>
+                <!-- Beautiful Form -->
+                <p class="mt-4">Here's the form after some bootstrap 🦋</p>
+                <form class="my-3">
+                  <!-- Email Field -->
+                  <div class="">
+                    <label class="" for="exampleInputEmail2">Email address</label>
+                    <input class="" type="email" id="exampleInputEmail2" aria-describedby="emailHelp">
+                    <div class="" id="emailHelp">We'll never share your email with anyone else.</div>
+                  </div>
+                  <!-- Password field -->
+                  <div class="">
+                    <label class="" for="exampleInputPassword2">Password</label>
+                    <input class="" type="password" id="exampleInputPassword2" disabled>
+                  </div>
+                  <!-- Checkbox -->
+                  <div class="">
+                    <input class="" type="checkbox" id="exampleCheck2">
+                    <label class="" for="exampleCheck2">Check me out</label>
+                  </div>
+                  <!-- Button -->
+                  <button class="" type="submit">Submit</button>
+                </form>
+              </div>
 
-              <!-- Beautiful Form -->
-              <p class="mt-4">Here's the form after some bootstrap 🦋</p>
-              <form class="my-3">
-                <!-- Email Field -->
-                <div class="">
-                  <label class="" for="exampleInputEmail2">Email address</label>
-                  <input class="" type="email" id="exampleInputEmail2" aria-describedby="emailHelp">
-                  <div class="" id="emailHelp">We'll never share your email with anyone else.</div>
-                </div>
-                <!-- Password field -->
-                <div class="">
-                  <label class="" for="exampleInputPassword2">Password</label>
-                  <input class="" type="password" id="exampleInputPassword2" disabled>
-                </div>
-                <!-- Checkbox -->
-                <div class="">
-                  <input class="" type="checkbox" id="exampleCheck2">
-                  <label class="" for="exampleCheck2">Check me out</label>
-                </div>
-                <!-- Button -->
-                <button class="" type="submit">Submit</button>
-              </form>
             </div>
 
             <!-- Begin flexbox code along -->
@@ -470,44 +482,25 @@
 
             <div class="border p-3" id="buttons">
               <h3 class="border-bottom">Button</h3>
-              <p class="mt-4">Bootstrap 5 provides different styles of buttons <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">More information
-                  </a></p>
-                  <p>Here is the basic buttons without bootstrap</p>
-                  <!-- Here is default button without bootstrap class -->
-                  <div class="container mt-3" >
-                    <button type="button" class="">Basic</button>
-                    <a href="#buttons" class=" -outline-secondary">Secondary</a>
-                    <input type="submit" class=" btn-primary" value="Submit Button"></input>
-                  </div>
-
-              <!-- buttons demo -->
-              <p class="mt-4">Let's style these buttons with bootstrap!</p>
-              <div class="container mt-3" >
+              <p class="mt-4">Bootstrap 5 provides different styles of buttons <a
+                  href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">More information
+                </a></p>
+              <p>Here is the basic buttons without bootstrap</p>
+              <!-- Here is default button without bootstrap class -->
+              <div class="container mt-3">
                 <button type="button" class="">Basic</button>
                 <a href="#buttons" class=" -outline-secondary">Secondary</a>
                 <input type="submit" class=" btn-primary" value="Submit Button"></input>
               </div>
 
-            <!-- Begin dropdowns code along -->
-
-              <hr>
-              <h3 class="border-bottom" id='dropdown'>Dropdowns</h3>
-              <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list <a
-                  href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">More information
-                </a></p>
-              <p>Here is the basic buttons without bootstrap</p>
-              
-              <!-- Here is default dropdown without bootstrap class -->
-              <div class="">
-                <button class="btn btn-primary " type="button">Dropdown Example
-                </button>
-                <ul class="">
-                  <li><a href="#dropdown">HTML</a></li>
-                  <li><a href="#dropdown">CSS</a></li>
-                  <li><a href="#dropdown">JavaScript</a></li>
-                </ul>
+              <!-- buttons demo -->
+              <p class="mt-4">Let's style these buttons with bootstrap!</p>
+              <div class="container mt-3">
+                <button type="button" class="">Basic</button>
+                <a href="#buttons" class=" -outline-secondary">Secondary</a>
+                <input type="submit" class=" btn-primary" value="Submit Button"></input>
               </div>
-              
+
               <p class="mt-4">Let's style these dropdown menu with bootstrap!</p>
 
               <!--  dropdown demo  -->
