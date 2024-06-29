@@ -15,18 +15,26 @@
 
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-expand-xl bg-warning navbar-light">
-      <div class="container">
-        <a href="#" class="navbar-brand">Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-3" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-item nav-link" href="#top">Home</a>
-            <a class="nav-item nav-link" href="#code-demo">Code Demo</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sections</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#what-is-bootstrap">What is Bootstrap?</a></li>
+                <li><a class="dropdown-item" href="#what-does-it-do">What Does it Do?</a></li>
+                <li><a class="dropdown-item" href="#why">Why Use Bootstrap?</a></li>
+                <li><a class="dropdown-item" href="#where">Where to Use Bootstrap?</a></li>
+                <li><a class="dropdown-item" href="#pros-and-cons">Pros and Cons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#code-demo">Code Demo</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -348,6 +356,7 @@
               <h3 class="border-bottom">Lists</h3>
               <p>Let's style this list!</p>
 
+              <p>This is the default list before....</p>
               <h3>Fruits</h3>
               <ul>
                 <li>Apple</li>
@@ -355,15 +364,28 @@
                 <li>Banana</li>
                 <li>Strawberry</li>
               </ul>
-              <!-- LIST UNSTYLED -->
-
-              <!-- LIST INLINE -->
 
               <!-- LIST GROUP -->
+              <p>...and after styling it using bootstrap's list group component:</p>
+
+              <h3 class="text-success">Fruits <small class="text-muted">(List Group)</small></h3>
+              <ul class="list-group p-3 w-50">
+                <li class="list-group-item">Apple</li>
+                <li class="list-group-item">Orange</li>
+                <li class="list-group-item">Banana</li>
+                <li class="list-group-item">Strawberry</li>
+              </ul>
 
               <!-- LIST GROUP - LINK/BUTTON -->
 
-
+              <h3 class="text-primary">Fruits <small class="text-muted">(List Group for links/buttons)</small></h3>
+              <div class="list-group p-3 w-50">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary" aria-current="true">Apple</a>
+                <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">Orange (disabled)</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Banana</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Strawberry</a>
+              </div>
+            </div>
               <!-- Begin cards code along -->
               <div class="border p-3">
                 <h3 class="border-bottom">Cards</h3>
@@ -377,7 +399,21 @@
                 <p>Now on sale!</p>
 
                 <!-- CARD W/ BOOTSTRAP -->
-
+                <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#cardExample" aria-expanded="true" aria-controls="cardExample">
+                  Click me to see the completed bootstrap card!
+                </button>
+              </p>
+              <div class="collapse" id="cardExample" style="">
+                <div class="card mb-5" style="width: 18rem;">
+                  <img src="images/nike.jpg" class="card-img-top" style="object-fit: cover; height: 18rem;" alt="Nike Air Force 1">
+                  <div class="p-2">
+                    <h3 class="card-title">Nike Air Force 1</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="btn btn-primary">More info</a>
+                    <p>Now on sale!</p>
+                  </div>
+                </div>
+              </div>
               </div>
 
               <!-- begin forms code along -->
@@ -434,7 +470,6 @@
                 </form>
               </div>
 
-            </div>
 
             <!-- Begin flexbox code along -->
             <div class="border p-3">
