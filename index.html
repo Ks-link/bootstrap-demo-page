@@ -17,19 +17,30 @@
 
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-expand-xl bg-warning navbar-light">
-      <div class="container">
-        <a href="#" class="navbar-brand">Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-3" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-item nav-link" href="#top">Home</a>
-            <a class="nav-item nav-link" href="#code-demo">Code Demo</a>
-            <a class="nav-item nav-link" href="#references">References</a>
-          </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sections</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#what-is-bootstrap">What is Bootstrap?</a></li>
+                <li><a class="dropdown-item" href="#what-does-it-do">What Does it Do?</a></li>
+                <li><a class="dropdown-item" href="#why">Why Use Bootstrap?</a></li>
+                <li><a class="dropdown-item" href="#where">Where to Use Bootstrap?</a></li>
+                <li><a class="dropdown-item" href="#pros-and-cons">Pros and Cons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#code-demo">Code Demo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -57,7 +68,7 @@
             </li>
             <li class="nav-item">
               <a href="#where" class="nav-link link-dark">Where to Use
-                Bootstrap</a>
+                Bootstrap?</a>
             </li>
             <li class="nav-item">
               <a href="#pros-and-cons" class="nav-link link-dark">Pros and
@@ -347,13 +358,13 @@
           <article id="code-demo" class="mb-5">
             <h2 class="py-4">Code Demo</h2>
 
-            <!-- Code demo content wrapper - for border -->
 
             <!-- begin lists code -->
             <div class="border p-3">
               <h3 class="border-bottom">Lists</h3>
               <p>Let's style this list!</p>
 
+              <p>This is the default list before....</p>
               <h3>Fruits</h3>
               <ul>
                 <li>Apple</li>
@@ -361,232 +372,292 @@
                 <li>Banana</li>
                 <li>Strawberry</li>
               </ul>
-              <!-- LIST UNSTYLED -->
-
-              <!-- LIST INLINE -->
 
               <!-- LIST GROUP -->
+              <p>...and after styling it using bootstrap's list group component:</p>
+
+              <h3 class="text-success">Fruits <small class="text-muted">(List Group)</small></h3>
+              <ul class="list-group p-3 w-50">
+                <li class="list-group-item">Apple</li>
+                <li class="list-group-item">Orange</li>
+                <li class="list-group-item">Banana</li>
+                <li class="list-group-item">Strawberry</li>
+              </ul>
 
               <!-- LIST GROUP - LINK/BUTTON -->
             </div>
 
+            <h3 class="text-primary">Fruits <small class="text-muted">(List Group for links/buttons)</small></h3>
+            <div class="list-group p-3 w-50">
+              <a href="#" class="list-group-item list-group-item-action list-group-item-primary"
+                aria-current="true">Apple</a>
+              <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">Orange
+                (disabled)</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Banana</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Strawberry</a>
+            </div>
+      </div>
+      <!-- Begin cards code along -->
+      <div class="border p-3">
+        <h3 class="border-bottom">Cards</h3>
+        <p>Now let's make this into a card using bootstrap.</p>
 
-            <!-- Begin cards code -->
-            <div class="border p-3">
-              <h3 class="border-bottom">Cards</h3>
-              <p>Now let's make this into a card using bootstrap.</p>
+        <!-- CARD W/ NO BOOTSTRAP -->
+        <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
+        <h3>Nike Air Force 1</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">More info</a>
+        <p>Now on sale!</p>
 
-              <!-- CARD W/ NO BOOTSTRAP -->
-              <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
-              <h3>Nike Air Force 1</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a href="#">More info</a>
+        <!-- CARD W/ BOOTSTRAP -->
+        <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#cardExample"
+          aria-expanded="true" aria-controls="cardExample">
+          Click me to see the completed bootstrap card!
+        </button>
+        </p>
+        <div class="collapse" id="cardExample">
+          <!-- img top -->
+          <p>Card with image at the top:</p>
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="images/nike.jpg" class="card-img-top" style="object-fit: cover; height: 18rem;"
+              alt="Nike Air Force 1">
+            <div class="p-2">
+              <h3 class="card-title">Nike Air Force 1</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="btn btn-primary">More info</a>
               <p>Now on sale!</p>
+            </div>
+          </div>
 
-              <!-- CARD W/ BOOTSTRAP -->
+          <!-- img bottom -->
+          <p>Card with image at the bottom:</p>
+          <div class="card mb-5" style="width: 18rem;">
+            <div class="p-2">
+              <h3 class="card-title">Nike Air Force 1</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="btn btn-primary">More info</a>
+              <p>Now on sale!</p>
+            </div>
+            <img src="images/nike.jpg" class="card-img-bottom" style="object-fit: cover; height: 18rem; alt=" Nike Air
+              Force 1">
+          </div>
+
+          <!-- overlay -->
+          <p>Card Image Overlay</p>
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="images/nike.jpg" class="card-img-top" style="object-fit: cover; height: 20rem; alt=" Nike Air
+              Force 1">
+            <div class="card-img-overlay p-2">
+              <h3 class="card-title">Nike Air Force 1</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="btn btn-primary">More info</a>
+              <p>Now on sale!</p>
             </div>
 
+          </div>
+        </div>
 
-            <!-- begin forms code -->
-            <div class="border p-3">
-              <h3 class="border-bottom">Forms</h3>
-              <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
-                  href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
-                  documentation</a></p>
 
-              <!-- Ugly Form -->
-              <h4 class="pt-4 pb-2">Here's the default form 🐛</h4>
-              <form class="my-3">
-                <!-- Email Field -->
-                <div>
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp1">
-                  <div id="emailHelp1">We'll never share your email with anyone else.</div>
-                </div>
-                <!-- Password field -->
-                <div>
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" id="exampleInputPassword1" disabled>
-                </div>
-                <!-- Checkbox -->
-                <div>
-                  <input type="checkbox" id="exampleCheck1">
-                  <label for="exampleCheck1">Check me out</label>
-                </div>
-                <!-- Button -->
-                <button type="submit">Submit</button>
-              </form>
+        <!-- begin forms code -->
+        <div class="border p-3">
+          <h3 class="border-bottom">Forms</h3>
+          <p>Let's make this form less ugly! <br>For more information on forms in bootstrap see <a
+              href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">bootstrap
+              documentation</a></p>
 
-              <!-- Beautiful Form -->
-              <h4 class="pt-4 pb-2">Here's the form after some bootstrap 🦋</h4>
-              <form class="my-3">
-                <!-- Email Field -->
-                <div class="mb-3">
-                  <label class="form-label" for="exampleInputEmail2">Email address</label>
-                  <input class="form-control" type="email" id="exampleInputEmail2" aria-describedby="emailHelp2">
-                  <div class="form-text" id="emailHelp2">We'll never share your email with anyone else.</div>
-                </div>
-                <!-- Password field -->
-                <div class="mb-3">
-                  <label class="form-label" for="exampleInputPassword2">Password</label>
-                  <input class="form-control" type="password" id="exampleInputPassword2" disabled>
-                </div>
-                <!-- Checkbox -->
-                <div class="mb-3 form-check">
-                  <input class="form-check-input" type="checkbox" id="exampleCheck2">
-                  <label class="form-check-label" for="exampleCheck2">Check me out</label>
-                </div>
-                <!-- Button -->
-                <button class="btn btn-primary" type="submit">Submit</button>
-              </form>
-
-              <h4 class="pt-4 pb-2">Here's all the code that was added</h4>
-              <p>
-                <code>class="form-label"</code> was added to the label tags in the email and password sections.
-                <br>
-                <code>class="form-control"</code> was added to the input tags in the email and password sections.
-                <br>
-                <code>class="form-text"</code> was added to the text underneath the email field. (They thought of
-                eveything)
-                <br>
-                <code>class="form-check"</code> was added to the checkbox div.
-                <br>
-                <code>class="form-check-input"</code> was added to the checkbox input tag.
-                <br>
-                <code>class="form-check-label"</code> was added to the checkbox label tag.
-                <br>
-                <code>class="btn"</code> and <code>class="btn-primary"</code> was added to the button.
-                <br>
-                And that's it! This beautiful form was achieved through adding a total of 7 classes.
-              </p>
+          <!-- Ugly Form -->
+          <h4 class="pt-4 pb-2">Here's the default form 🐛</h4>
+          <form class="my-3">
+            <!-- Email Field -->
+            <div>
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp1">
+              <div id="emailHelp1">We'll never share your email with anyone else.</div>
             </div>
-
-
-            <!-- Begin flexbox code -->
-            <div class="border p-3">
-              <h3 class="border-bottom">Flexboxes</h3>
-              <p>Bootstrap even has default styles for everyone's favourite: flexboxes! <br>For more information on
-                flexboxes in bootstrap see <a href="https://getbootstrap.com/docs/5.3/utilities/flex/"
-                  target="_blank">bootstrap
-                  documentation</a></p>
-
-              <h4 class="pt-4 pb-2">Here are the default flex-box behaviors</h4>
-
-              <!-- Justify Content demo -->
-              <div class="bg-dark-subtle d-flex mb-3 ">
-                <div class="p-2 bg-warning-subtle border">Justify</div>
-                <div class="p-2 bg-warning-subtle border">Content</div>
-                <div class="p-2 bg-warning-subtle border">Evenly</div>
-              </div>
-
-              <!-- Flex Grow demo -->
-              <div class="bg-dark-subtle mb-3 d-flex">
-                <div class="bg-warning-subtle border p-2">Let me grow!</div>
-                <div class="bg-warning-subtle border p-2">Item 1</div>
-                <div class="bg-warning-subtle border p-2">Item 2</div>
-              </div>
-
-              <!-- Wrap demo -->
-              <div class="bg-dark-subtle mb-3 d-flex ">
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 1</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 2</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 3</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 4</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 5</div>
-              </div>
-
-              <!-- begin bootstrap version -->
-              <h4 class="pt-4 pb-2">Here are 3 examples of manipulating flex-boxes through bootstrap</h4>
-              <!-- Justify Content demo -->
-              <div class="bg-dark-subtle d-flex mb-3 justify-content-evenly">
-                <div class="p-2 bg-warning-subtle border">Justify</div>
-                <div class="p-2 bg-warning-subtle border">Content</div>
-                <div class="p-2 bg-warning-subtle border">Evenly</div>
-              </div>
-
-              <!-- Flex Grow demo -->
-              <div class="bg-dark-subtle mb-3 d-flex">
-                <div class="bg-warning-subtle border p-2 flex-grow-1">Let me grow!</div>
-                <div class="bg-warning-subtle border p-2">Item 1</div>
-                <div class="bg-warning-subtle border p-2">Item 2</div>
-              </div>
-
-              <!-- Wrap demo -->
-              <div class="bg-dark-subtle mb-3 d-flex flex-wrap">
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 1</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 2</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 3</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 4</div>
-                <div class="p-2 bg-warning-subtle border w-100">Wrap me 5</div>
-              </div>
-
-              <h4 class="pt-4 pb-2">Here's all the code that was added</h4>
-              <p>
-                <code>class="justify-content-evenly"</code> was added to the first flex box.
-                <br>
-                <code>class="flex-grow-1"</code> was added to the 'let me grow' flex item in the second flex box.
-                <br>
-                <code>class="flex-wrap"</code> was added to the third flex box. Note: each flex item has a class of
-                <code>"w-100"</code>, this is why each flex item expands when wrap is applied.
-                <br>
-                And that's all! Note, each flex box needs to be defined with a class of <code>"d-flex"</code> in order
-                to become a flex box.
-              </p>
+            <!-- Password field -->
+            <div>
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" id="exampleInputPassword1" disabled>
             </div>
-
-
-            <!-- Begin buttons code along -->
-
-            <div class="border p-3" id="buttons">
-              <h3 class="border-bottom">Button</h3>
-              <p class="mt-4">Bootstrap 5 provides different styles of buttons <a
-                  href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">More information
-                </a></p>
-              <p>Here is the basic buttons without bootstrap</p>
-              <!-- Here is default button without bootstrap class -->
-              <div class="container mt-3">
-                <h4>Basic Buttons</h4>
-                <button type="button" class="">primary button</button>
-                <button type="button" class="">secondary button</button>
-                <h4>Links as buttons</h4>
-                <a href="#buttons" class="">info anchor tag</a>
-                <h4>Button sizes</h4>
-                <button type="button" class="">Large danger button</button>
-              </div>
-
-              <!-- buttons demo -->
-              <p class="mt-4">Let's style these buttons with bootstrap!</p>
-              <div class="container mt-3">
-                <h4>Basic Buttons</h4>
-                <button type="button" class="">primary button</button>
-                <button type="button" class="">secondary button</button>
-                <h4>Links as buttons</h4>
-                <a href="#buttons" class="">info anchor tag</a>
-                <h4>Button sizes</h4>
-                <button type="button" class="">Large danger button</button>
-              </div>
+            <!-- Checkbox -->
+            <div>
+              <input type="checkbox" id="exampleCheck1">
+              <label for="exampleCheck1">Check me out</label>
             </div>
-          </article>
+            <!-- Button -->
+            <button type="submit">Submit</button>
+          </form>
 
-          <div id="references"></div>
-          <h2>References</h2>
-          <ul>
-            <li><a href="https://www.bootstrapdash.com/blog/pros-cons-using-bootstrap-web-development"
-                target="_blank">https://www.bootstrapdash.com/blog/pros-cons-using-bootstrap-web-development</a></li>
-            <li><a href="https://fabrx.co/blog/bootstrap-in-web-development/"
-                target="_blank">https://fabrx.co/blog/bootstrap-in-web-development/</a></li>
-            <li><a href="https://www.geeksforgeeks.org/bootstrap/"
-                target="_blank">https://www.geeksforgeeks.org/bootstrap/</a></li>
-            <li><a href="https://getbootstrap.com/docs/4.0/about/history/"
-                target="_blank">https://getbootstrap.com/docs/4.0/about/history/</a></li>
-            <li><a href="https://www.boardinfinity.com/blog/why-should-we-use-bootstrap/"
-                target="_blank">https://www.boardinfinity.com/blog/why-should-we-use-bootstrap/</a></li>
-            <li><a href="https://careerfoundry.com/en/blog/web-development/what-is-bootstrap-a-beginners-guide/"
-                target="_blank">https://careerfoundry.com/en/blog/web-development/what-is-bootstrap-a-beginners-guide/</a>
-            </li>
-            <li><a href="https://www.w3schools.com/bootstrap5/"
-                target="_blank">https://www.w3schools.com/bootstrap5/</a></li>
-          </ul>
+          <!-- Beautiful Form -->
+          <h4 class="pt-4 pb-2">Here's the form after some bootstrap 🦋</h4>
+          <form class="my-3">
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label class="form-label" for="exampleInputEmail2">Email address</label>
+              <input class="form-control" type="email" id="exampleInputEmail2" aria-describedby="emailHelp2">
+              <div class="form-text" id="emailHelp2">We'll never share your email with anyone else.</div>
+            </div>
+            <!-- Password field -->
+            <div class="mb-3">
+              <label class="form-label" for="exampleInputPassword2">Password</label>
+              <input class="form-control" type="password" id="exampleInputPassword2" disabled>
+            </div>
+            <!-- Checkbox -->
+            <div class="mb-3 form-check">
+              <input class="form-check-input" type="checkbox" id="exampleCheck2">
+              <label class="form-check-label" for="exampleCheck2">Check me out</label>
+            </div>
+            <!-- Button -->
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+
+          <h4 class="pt-4 pb-2">Here's all the code that was added</h4>
+          <p>
+            <code>class="form-label"</code> was added to the label tags in the email and password sections.
+            <br>
+            <code>class="form-control"</code> was added to the input tags in the email and password sections.
+            <br>
+            <code>class="form-text"</code> was added to the text underneath the email field. (They thought of
+            eveything)
+            <br>
+            <code>class="form-check"</code> was added to the checkbox div.
+            <br>
+            <code>class="form-check-input"</code> was added to the checkbox input tag.
+            <br>
+            <code>class="form-check-label"</code> was added to the checkbox label tag.
+            <br>
+            <code>class="btn"</code> and <code>class="btn-primary"</code> was added to the button.
+            <br>
+            And that's it! This beautiful form was achieved through adding a total of 7 classes.
+          </p>
+        </div>
+
+
+        <!-- Begin flexbox code -->
+        <div class="border p-3">
+          <h3 class="border-bottom">Flexboxes</h3>
+          <p>Bootstrap even has default styles for everyone's favourite: flexboxes! <br>For more information on
+            flexboxes in bootstrap see <a href="https://getbootstrap.com/docs/5.3/utilities/flex/"
+              target="_blank">bootstrap
+              documentation</a></p>
+
+          <h4 class="pt-4 pb-2">Here are the default flex-box behaviors</h4>
+
+          <!-- Justify Content demo -->
+          <div class="bg-dark-subtle d-flex mb-3 ">
+            <div class="p-2 bg-warning-subtle border">Justify</div>
+            <div class="p-2 bg-warning-subtle border">Content</div>
+            <div class="p-2 bg-warning-subtle border">Evenly</div>
+          </div>
+
+          <!-- Flex Grow demo -->
+          <div class="bg-dark-subtle mb-3 d-flex">
+            <div class="bg-warning-subtle border p-2">Let me grow!</div>
+            <div class="bg-warning-subtle border p-2">Item 1</div>
+            <div class="bg-warning-subtle border p-2">Item 2</div>
+          </div>
+
+          <!-- Wrap demo -->
+          <div class="bg-dark-subtle mb-3 d-flex ">
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 1</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 2</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 3</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 4</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 5</div>
+          </div>
+
+          <!-- begin bootstrap version -->
+          <h4 class="pt-4 pb-2">Here are 3 examples of manipulating flex-boxes through bootstrap</h4>
+          <!-- Justify Content demo -->
+          <div class="bg-dark-subtle d-flex mb-3 justify-content-evenly">
+            <div class="p-2 bg-warning-subtle border">Justify</div>
+            <div class="p-2 bg-warning-subtle border">Content</div>
+            <div class="p-2 bg-warning-subtle border">Evenly</div>
+          </div>
+
+          <!-- Flex Grow demo -->
+          <div class="bg-dark-subtle mb-3 d-flex">
+            <div class="bg-warning-subtle border p-2 flex-grow-1">Let me grow!</div>
+            <div class="bg-warning-subtle border p-2">Item 1</div>
+            <div class="bg-warning-subtle border p-2">Item 2</div>
+          </div>
+
+          <!-- Wrap demo -->
+          <div class="bg-dark-subtle mb-3 d-flex flex-wrap">
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 1</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 2</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 3</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 4</div>
+            <div class="p-2 bg-warning-subtle border w-100">Wrap me 5</div>
+          </div>
+
+          <h4 class="pt-4 pb-2">Here's all the code that was added</h4>
+          <p>
+            <code>class="justify-content-evenly"</code> was added to the first flex box.
+            <br>
+            <code>class="flex-grow-1"</code> was added to the 'let me grow' flex item in the second flex box.
+            <br>
+            <code>class="flex-wrap"</code> was added to the third flex box. Note: each flex item has a class of
+            <code>"w-100"</code>, this is why each flex item expands when wrap is applied.
+            <br>
+            And that's all! Note, each flex box needs to be defined with a class of <code>"d-flex"</code> in order
+            to become a flex box.
+          </p>
+        </div>
+
+
+        <!-- Begin buttons code along -->
+
+        <div class="border p-3" id="buttons">
+          <h3 class="border-bottom">Button</h3>
+          <p class="mt-4">Bootstrap 5 provides different styles of buttons <a
+              href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">More information
+            </a></p>
+          <p>Here is the basic buttons without bootstrap</p>
+          <!-- Here is default button without bootstrap class -->
+          <div class="container mt-3">
+            <h4>Basic Buttons</h4>
+            <button type="button" class="">primary button</button>
+            <button type="button" class="">secondary button</button>
+            <h4>Links as buttons</h4>
+            <a href="#buttons" class="">info anchor tag</a>
+            <h4>Button sizes</h4>
+            <button type="button" class="">Large danger button</button>
+          </div>
+
+          <!-- buttons demo -->
+          <p class="mt-4">Let's style these buttons with bootstrap!</p>
+          <div class="container mt-3">
+            <h4>Basic Buttons</h4>
+            <button type="button" class="">primary button</button>
+            <button type="button" class="">secondary button</button>
+            <h4>Links as buttons</h4>
+            <a href="#buttons" class="">info anchor tag</a>
+            <h4>Button sizes</h4>
+            <button type="button" class="">Large danger button</button>
+          </div>
+        </div>
+        </article>
+
+        <div id="references"></div>
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://www.bootstrapdash.com/blog/pros-cons-using-bootstrap-web-development"
+              target="_blank">https://www.bootstrapdash.com/blog/pros-cons-using-bootstrap-web-development</a></li>
+          <li><a href="https://fabrx.co/blog/bootstrap-in-web-development/"
+              target="_blank">https://fabrx.co/blog/bootstrap-in-web-development/</a></li>
+          <li><a href="https://www.geeksforgeeks.org/bootstrap/"
+              target="_blank">https://www.geeksforgeeks.org/bootstrap/</a></li>
+          <li><a href="https://getbootstrap.com/docs/4.0/about/history/"
+              target="_blank">https://getbootstrap.com/docs/4.0/about/history/</a></li>
+          <li><a href="https://www.boardinfinity.com/blog/why-should-we-use-bootstrap/"
+              target="_blank">https://www.boardinfinity.com/blog/why-should-we-use-bootstrap/</a></li>
+          <li><a href="https://careerfoundry.com/en/blog/web-development/what-is-bootstrap-a-beginners-guide/"
+              target="_blank">https://careerfoundry.com/en/blog/web-development/what-is-bootstrap-a-beginners-guide/</a>
+          </li>
+          <li><a href="https://www.w3schools.com/bootstrap5/" target="_blank">https://www.w3schools.com/bootstrap5/</a>
+          </li>
+        </ul>
         </section>
 
       </div>
