@@ -406,14 +406,15 @@
               <p>Now let's make this into a card using bootstrap.</p>
 
               <!-- CARD W/ NO BOOTSTRAP -->
-              <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
-              <h3>Nike Air Force 1</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a href="#">More info</a>
-              <p>Now on sale!</p>
+              <div class="mb-2">
+                <img src="images/nike.jpg" alt="Nike Air Force 1" style="width: 15rem">
+                <h3>Nike Air Force 1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">More info</a>  
+              </div>
 
               <!-- CARD W/ BOOTSTRAP -->
-              <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#cardExample"
+              <button class="btn btn-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#cardExample"
                 aria-expanded="true" aria-controls="cardExample">
                 Click me to see the completed bootstrap card!
               </button>
@@ -424,22 +425,20 @@
                 <div class="card mb-5" style="width: 18rem;">
                   <img src="images/nike.jpg" class="card-img-top" style="object-fit: cover; height: 18rem;"
                     alt="Nike Air Force 1">
-                  <div class="p-2">
+                  <div class="card-body">
                     <h3 class="card-title">Nike Air Force 1</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet.</p>
                     <a href="#" class="btn btn-primary">More info</a>
-                    <p>Now on sale!</p>
                   </div>
                 </div>
 
                 <!-- img bottom -->
                 <p>Card with image at the bottom:</p>
                 <div class="card mb-5" style="width: 18rem;">
-                  <div class="p-2">
+                  <div class="card-body">
                     <h3 class="card-title">Nike Air Force 1</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet.</p>
                     <a href="#" class="btn btn-primary">More info</a>
-                    <p>Now on sale!</p>
                   </div>
                   <img src="images/nike.jpg" class="card-img-bottom" style="object-fit: cover; height: 18rem;" alt="Nike Air
               Force 1">
@@ -448,13 +447,12 @@
                 <!-- overlay -->
                 <p>Card Image Overlay</p>
                 <div class="card mb-5" style="width: 18rem;">
-                  <img src="images/nike.jpg" class="card-img-top" style="object-fit: cover; height: 20rem;" alt="Nike Air
+                  <img src="images/nike.jpg" class="card-img" style="object-fit: cover; height: 20rem;" alt="Nike Air
               Force 1">
                   <div class="card-img-overlay p-2">
                     <h3 class="card-title">Nike Air Force 1</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet.</p>
                     <a href="#" class="btn btn-primary">More info</a>
-                    <p>Now on sale!</p>
                   </div>
                 </div>
               </div>
